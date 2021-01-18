@@ -5,8 +5,9 @@ export const StyledNav = styled.nav`
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 6rem;
+  height: var(--mobile-nav-height);
   border-top: 3px solid var(--color-grey-light);
+  background-color: var(--color-white);
 
   display: flex;
   justify-content: space-around;
@@ -14,7 +15,7 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledNavLink = styled(NavLink)`
-  color: var(--color-grey-light);
+  color: var(--color-grey);
 
   &.active {
     color: var(--color-primary);

@@ -5,6 +5,7 @@ import GlobalStyle from './global.styles';
 
 import MobileNav from './features/MobileNav/MobileNav';
 import HomePage from './features/Home/HomePage';
+import LoginPage from './features/Login/LoginPage';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/test">
             <h1>Test route</h1>
           </Route>
+          <Route path="/login" component={LoginPage} />
         </Switch>
         <MobileNav />
       </Router>
